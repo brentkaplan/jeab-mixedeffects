@@ -1,0 +1,75 @@
+---
+title: "Multilevel Modeling"
+author:
+- address: 2 Riverside Circle, Roanoke, VA 24016
+  affiliation: 1
+  corresponding: yes
+  email: brady711@vtc.vt.edu
+  name: W. Brady DeHart
+- affiliation: '1'
+  name: Brent A. Kaplan
+affiliation:
+- id: 1
+  institution: Virginia Tech Carilion Research Institute, Virginia Polytechnic Institute and State University
+output:
+  papaja::apa6_word: default
+  papaja::apa6_pdf: default
+bibliography: bibliography.bib
+class: man
+figsintext: no
+figurelist: no
+footnotelist: no
+keywords: multilevel modeling, statistics
+lang: english
+lineno: yes
+author_note: |
+  Author note here
+shorttitle: Multilevel
+tablelist: no
+abstract: |
+  Abstract here.
+wordcount: X
+---
+
+```{r opts, include = FALSE}
+knitr::opts_chunk$set(fig.path = "plots/")
+```
+
+```{r setup, include = FALSE}
+library("papaja")
+library("beezdemand")
+library("tidyverse")
+library("tableone")
+library("lme4")
+library("sjmisc")
+library("sjPlot")
+wdir <- "../workingdata/"
+pltdir <- "plots/"
+
+```
+
+Introduction will go here.
+
+# Methods
+
+## Procedure
+
+## Data analysis
+
+# Results
+
+# Discussion
+
+
+## Conclusion
+
+
+\newpage
+
+# References
+```{r create_r-references, eval = FALSE}
+r_refs(file = "bibliography.bib")
+```
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
