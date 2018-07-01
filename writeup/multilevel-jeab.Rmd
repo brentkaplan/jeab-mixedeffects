@@ -48,7 +48,27 @@ pltdir <- "plots/"
 
 ```
 
-Introduction will go here.
+Problem:
+
+## Standard Regression
+Standard regression is relatively easy and straightfoward. With most statistical tests, the degree to which estimates will be efficient (in terms of minimzing the error) and unbiased (reflective of the "true" value) depends in part on the assumptions of the test. In a standard regression framework, the following assumptions are important:
+1. Homogeniety of variance
+2. Independence
+3. Error term = 0 (Normal distribution of residuals)
+However, when some of these assumptions are not met, estimates from OLS may not be efficient and unbiased. ABA experimental designs are often set up as to measure behavior over time, thus violating the assumption of independence.
+
+Describe degrees of freedom (i.e., the information available to make predictions)
+
+## Multilevel Models
+Mulilevel models (also known as hierarchical or mixed-effect models) are designed to handle certain violations of assumptions in the normal regression framework.
+
+1. Fixed effects
+2. Random effects
+
+Another benefit of MLM is the ability to maximize degrees of freedom. Example of multiple participants. One could run a regression on each participant, but the amount of information to be used in each regression will be a fraction of the whole and could lead to large variation in estimates. Could assume that participants share some similar aspect (respond in a similar way) and that a given procedure might affect participants in a general way (i.e., decrease behavior). However some participants may decrease behavior to different degrees. Estimate a "mean" decrease but allow individual participants to "fluctuate" or "deviate" from that "mean" decrease. Because information from all participants are used, estimates will likely be more accurate. 
+
+Ultimately, MLM can provide greater characterization of behavior and thus enhanced prediction (and control) of behavior. 
+
 
 # Methods
 
